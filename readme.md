@@ -44,3 +44,19 @@ WEATHER_FORECAST_PROVIDER=weatherapi
 WEATHER_FORECAST_KEY=
 
 ```
+
+## Artisan
+
+You can the weather forecast using artisan terminal
+
+```
+php artisan forecast:check {IP-address}
+```
+
+## API
+
+You can access the forecasted weather API by adding `format=json` query.
+
+```
+http://location:8080/forecast/{IP}?format=json
+```
