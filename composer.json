@@ -1,0 +1,49 @@
+{
+    "name": "tonoslfx/ecce-weather-forecast",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sumartono Aw",
+            "email": "tonos.lfc@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/tonoslfx/ecce-weather-forecast",
+    "keywords": ["Laravel", "EcceWeatherForecast"],
+    "require": {
+        "php": "^7.3",
+        "illuminate/http": "^8.0|^9.0",
+        "illuminate/config": "^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0",
+        "illuminate/database": "^8.0|^9.0",
+        "illuminate/pagination": "^8.0|^9.0",
+        "illuminate/console": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tonoslfx\\EcceWeatherForecast\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tonoslfx\\EcceWeatherForecast\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tonoslfx\\EcceWeatherForecast\\EcceWeatherForecastServiceProvider"
+            ],
+            "aliases": {
+                "EcceWeatherForecast": "Tonoslfx\\EcceWeatherForecast\\Facades\\EcceWeatherForecast"
+            }
+        }
+    }
+}

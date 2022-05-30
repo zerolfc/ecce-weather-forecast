@@ -1,0 +1,48 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateForecastsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('forecasts', function (Blueprint $table) {
+            $table->id();
+            $table->bigInteger('ip_id')->unsigned();
+            $table->date('date')->index();
+            $table->decimal('mintemp_c', 4, 2);
+            $table->decimal('mintemp_f', 4, 2)->nullable();
+            $table->decimal('maxtemp_c', 4, 2);
+            $table->decimal('maxtemp_f', 4, 2)->nullable();
+            $table->decimal('avgtemp_c', 4, 2)->nullable();
+            $table->decimal('avgtemp_f', 4, 2)->nullable();
+            $table->string('condition_text', 100)->nullable();
+            $table->decimal('uv', 3, 1)->nullable();
+            $table->string('icon')->nullable();
+            $table->timestamps();
+
+
+            $table->foreign('ip_id')
+                ->references('id')
+                ->on('forecast_ips')
+                ->onDelete('cascade');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('forecasts');
+    }
+}
