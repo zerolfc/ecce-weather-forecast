@@ -1,11 +1,11 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Tests\Unit;
+namespace Zerolfc\EcceWeatherForecast\Tests\Unit;
 
-use Tonoslfx\EcceWeatherForecast\Tests\TestCase;
-use Tonoslfx\EcceWeatherForecast\Models\ForecastIp as ForecastIpModel;
-use Tonoslfx\EcceWeatherForecast\Repositories\Forecast as ForecastRepo;
-use Tonoslfx\EcceWeatherForecast\Repositories\ForecastIp as ForecastIpRepo;
+use Zerolfc\EcceWeatherForecast\Tests\TestCase;
+use Zerolfc\EcceWeatherForecast\Models\ForecastIp as ForecastIpModel;
+use Zerolfc\EcceWeatherForecast\Repositories\Forecast as ForecastRepo;
+use Zerolfc\EcceWeatherForecast\Repositories\ForecastIp as ForecastIpRepo;
 
 class ForecastTest extends TestCase
 {

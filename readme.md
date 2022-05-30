@@ -11,7 +11,15 @@ This package is currently only supported two free weather API provider.
 ## Installation
 
 ```
-composer require tonoslfx/ecce-weather-forecast
+composer require zerolfc/ecce-weather-forecast
+```
+
+## View
+
+Depending on how you set your local server
+
+```
+http://{local-url}/forecast
 ```
 
 ## Configuration

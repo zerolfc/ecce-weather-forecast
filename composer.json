@@ -1,5 +1,5 @@
 {
-    "name": "tonoslfx/ecce-weather-forecast",
+    "name": "zerolfc/ecce-weather-forecast",
     "description": ":package_description",
     "license": "MIT",
     "authors": [
@@ -8,7 +8,7 @@
             "email": "tonos.lfc@gmail.com"
         }
     ],
-    "homepage": "https://github.com/tonoslfx/ecce-weather-forecast",
+    "homepage": "https://github.com/zerolfc/ecce-weather-forecast",
     "keywords": ["Laravel", "EcceWeatherForecast"],
     "require": {
         "php": "^7.3",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tonoslfx\\EcceWeatherForecast\\": "src"
+            "Zerolfc\\EcceWeatherForecast\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tonoslfx\\EcceWeatherForecast\\Tests\\": "tests"
+            "Zerolfc\\EcceWeatherForecast\\Tests\\": "tests"
         }
     },
     "config": {
@@ -39,10 +39,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Tonoslfx\\EcceWeatherForecast\\EcceWeatherForecastServiceProvider"
+                "Zerolfc\\EcceWeatherForecast\\EcceWeatherForecastServiceProvider"
             ],
             "aliases": {
-                "EcceWeatherForecast": "Tonoslfx\\EcceWeatherForecast\\Facades\\EcceWeatherForecast"
+                "EcceWeatherForecast": "Zerolfc\\EcceWeatherForecast\\Facades\\EcceWeatherForecast"
             }
         }
     }

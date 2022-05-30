@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Models;
+namespace Zerolfc\EcceWeatherForecast\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

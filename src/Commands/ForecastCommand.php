@@ -1,10 +1,10 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Commands;
+namespace Zerolfc\EcceWeatherForecast\Commands;
 
 use Illuminate\Config\Repository;
 use Illuminate\Console\Command;
-use Tonoslfx\EcceWeatherForecast\Models\ForecastIp as ForecastIpModel;
+use Zerolfc\EcceWeatherForecast\Models\ForecastIp as ForecastIpModel;
 
 class ForecastCommand extends Command
 {

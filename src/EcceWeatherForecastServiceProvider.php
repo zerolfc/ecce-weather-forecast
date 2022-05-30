@@ -1,9 +1,9 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast;
+namespace Zerolfc\EcceWeatherForecast;
 
 use Illuminate\Support\ServiceProvider;
-use Tonoslfx\EcceWeatherForecast\Commands\ForecastCommand;
+use Zerolfc\EcceWeatherForecast\Commands\ForecastCommand;
 
 class EcceWeatherForecastServiceProvider extends ServiceProvider
 {
@@ -16,9 +16,7 @@ class EcceWeatherForecastServiceProvider extends ServiceProvider
     {
 
 
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'tonoslfx');
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'tonoslfx');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'zerolfc');
         $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         // Publishing is only necessary when using the CLI.
@@ -60,23 +58,13 @@ class EcceWeatherForecastServiceProvider extends ServiceProvider
 
         // Publishing the views.
         $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/tonoslfx'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/zerolfc'),
         ], 'ecce-weather-forecast.views');
 
         $this->publishes([
             __DIR__ . '/../database/migrations/create_forecasts_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_forecasts_table.php'),
             __DIR__ . '/../database/migrations/create_forecast_ips_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_forecast_ips_table.php'),
         ], 'ecce-weather-forecast.migrations');
-
-        // Publishing assets.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/tonoslfx'),
-        ], 'ecce-weather-forecast.views');*/
-
-        // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/tonoslfx'),
-        ], 'ecce-weather-forecast.views');*/
 
         // Registering package commands.
         $this->commands([

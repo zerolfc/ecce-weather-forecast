@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast;
+namespace Zerolfc\EcceWeatherForecast;
 
 use Exception;
 use Illuminate\Support\Facades\Cache;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Facades;
+namespace Zerolfc\EcceWeatherForecast\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

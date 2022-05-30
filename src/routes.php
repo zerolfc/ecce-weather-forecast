@@ -1,6 +1,6 @@
 <?php
 
-use Tonoslfx\EcceWeatherForecast\EcceWeatherForecastController;
+use Zerolfc\EcceWeatherForecast\EcceWeatherForecastController;
 
 Route::get('forecast', [EcceWeatherForecastController::class, 'index'])
 ->middleware('web')

@@ -1,9 +1,9 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Repositories;
+namespace Zerolfc\EcceWeatherForecast\Repositories;
 
-use Tonoslfx\EcceWeatherForecast\Models\ForecastIp as Model;
-use Tonoslfx\EcceWeatherForecast\Contracts\ForecastIpContract;
+use Zerolfc\EcceWeatherForecast\Models\ForecastIp as Model;
+use Zerolfc\EcceWeatherForecast\Contracts\ForecastIpContract;
 use Illuminate\Http\Request;
 
 

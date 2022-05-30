@@ -1,15 +1,15 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast;
+namespace Zerolfc\EcceWeatherForecast;
 
 use Exception;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Tonoslfx\EcceWeatherForecast\EcceWeatherForecast;
-use Tonoslfx\EcceWeatherForecast\Models\ForecastIp as ForecastIpModel;
-use Tonoslfx\EcceWeatherForecast\Repositories\Forecast as ForecastRepo;
-use Tonoslfx\EcceWeatherForecast\Repositories\ForecastIp as ForecastIpRepo;
+use Zerolfc\EcceWeatherForecast\EcceWeatherForecast;
+use Zerolfc\EcceWeatherForecast\Models\ForecastIp as ForecastIpModel;
+use Zerolfc\EcceWeatherForecast\Repositories\Forecast as ForecastRepo;
+use Zerolfc\EcceWeatherForecast\Repositories\ForecastIp as ForecastIpRepo;
 
 
 class EcceWeatherForecastController extends Controller
@@ -51,7 +51,7 @@ class EcceWeatherForecastController extends Controller
         });
 
 
-        return view('tonoslfx::forecast', compact('ips'));
+        return view('zerolfc::forecast', compact('ips'));
 
     }
 
@@ -84,7 +84,7 @@ class EcceWeatherForecastController extends Controller
             }
 
             return view(
-                'tonoslfx::ip',
+                'zerolfc::ip',
                 compact('ip', 'forecast')
             );
 

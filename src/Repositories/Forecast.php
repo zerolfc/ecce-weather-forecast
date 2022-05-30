@@ -1,10 +1,10 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Repositories;
+namespace Zerolfc\EcceWeatherForecast\Repositories;
 
-use Tonoslfx\EcceWeatherForecast\Models\Forecast as Model;
-use Tonoslfx\EcceWeatherForecast\Contracts\ForecastContract;
-use Tonoslfx\EcceWeatherForecast\Models\ForecastIp;
+use Zerolfc\EcceWeatherForecast\Models\Forecast as Model;
+use Zerolfc\EcceWeatherForecast\Contracts\ForecastContract;
+use Zerolfc\EcceWeatherForecast\Models\ForecastIp;
 
 
 class Forecast implements ForecastContract

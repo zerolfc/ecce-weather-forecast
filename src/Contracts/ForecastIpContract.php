@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Contracts;
+namespace Zerolfc\EcceWeatherForecast\Contracts;
 
 use Illuminate\Http\Request;
 

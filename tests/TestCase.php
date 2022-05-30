@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonoslfx\EcceWeatherForecast\Tests;
+namespace Zerolfc\EcceWeatherForecast\Tests;
 
-use Tonoslfx\EcceWeatherForecast\EcceWeatherForecastServiceProvider;
+use Zerolfc\EcceWeatherForecast\EcceWeatherForecastServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
