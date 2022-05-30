@@ -40,11 +40,11 @@ class EcceWeatherForecast
 
         $cacheName = md5(__METHOD__.$q.$this->config['provider']);
 
-        // if($forecast = Cache::get($cacheName)) {
+        if($forecast = Cache::get($cacheName)) {
 
-        //     return $forecast;
+            return $forecast;
 
-        // }
+        }
 
         $response = $this->_api();
 
@@ -91,7 +91,7 @@ class EcceWeatherForecast
 
         if($provider) {
 
-            $cacheName = md5(__METHOD__ . $provider);
+            $cacheName = md5(__METHOD__ . $provider.$this->q);
 
             $output = $providers[$provider];
 
@@ -101,7 +101,7 @@ class EcceWeatherForecast
 
                 if(!$getCoordinate) {
 
-                    $getCoordinate = Http::get('http://ip-api.com/json/24.48.0.1');
+                    $getCoordinate = Http::get('http://ip-api.com/json/' . $this->q);
 
                     if ($getCoordinate->ok()) {
 
